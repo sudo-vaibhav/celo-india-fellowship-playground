@@ -1,0 +1,467 @@
+{
+  "contractName": "Sticker",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "imagePath",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_imagePath",
+          "type": "string"
+        }
+      ],
+      "name": "setSticker",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"imagePath\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"_imagePath\",\"type\":\"string\"}],\"name\":\"setSticker\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/vaibhavchopra/code/celo-india-fellowship/cif-week-1/ipfs-dapp/src/contracts/Sticker.sol\":\"Sticker\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/vaibhavchopra/code/celo-india-fellowship/cif-week-1/ipfs-dapp/src/contracts/Sticker.sol\":{\"keccak256\":\"0xfd313e0c643efd77a26cc8bc13d754ca6aceb035ab8d1b6fe51ae85f0d330078\",\"urls\":[\"bzz-raw://981edeb8a6fc6e7f49eeb312ff5f16ae81e4fc92d2ff3da57839ae54275b7da3\",\"dweb:/ipfs/QmWoUfvfC77x7T9pugkHLF9CvT69rH3uvk7WcFRv2aAX3K\"]}},\"version\":1}",
+  "bytecode": "0x60e0604052602e6080818152906103b860a039805161002691600091602090910190610039565b5034801561003357600080fd5b506100d4565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061007a57805160ff19168380011785556100a7565b828001600101855582156100a7579182015b828111156100a757825182559160200191906001019061008c565b506100b39291506100b7565b5090565b6100d191905b808211156100b357600081556001016100bd565b90565b6102d5806100e36000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80632c0545641461003b578063a44db015146100b8575b600080fd5b610043610160565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561007d578181015183820152602001610065565b50505050905090810190601f1680156100aa5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61015e600480360360208110156100ce57600080fd5b8101906020810181356401000000008111156100e957600080fd5b8201836020820111156100fb57600080fd5b8035906020019184600183028401116401000000008311171561011d57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ee945050505050565b005b6000805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156101e65780601f106101bb576101008083540402835291602001916101e6565b820191906000526020600020905b8154815290600101906020018083116101c957829003601f168201915b505050505081565b8051610201906000906020840190610205565b5050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061024657805160ff1916838001178555610273565b82800160010185558215610273579182015b82811115610273578251825591602001919060010190610258565b5061027f929150610283565b5090565b61029d91905b8082111561027f5760008155600101610289565b9056fea265627a7a72315820edc0d03a5a239efcec69eac7834af2eab22b87ad40e052281115e4142692121e64736f6c63430005100032516d53456e364c5a59793469665352665953586f4332794a4a585a4e6f65387a6631684e717454526b556f533275",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80632c0545641461003b578063a44db015146100b8575b600080fd5b610043610160565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561007d578181015183820152602001610065565b50505050905090810190601f1680156100aa5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61015e600480360360208110156100ce57600080fd5b8101906020810181356401000000008111156100e957600080fd5b8201836020820111156100fb57600080fd5b8035906020019184600183028401116401000000008311171561011d57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506101ee945050505050565b005b6000805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156101e65780601f106101bb576101008083540402835291602001916101e6565b820191906000526020600020905b8154815290600101906020018083116101c957829003601f168201915b505050505081565b8051610201906000906020840190610205565b5050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061024657805160ff1916838001178555610273565b82800160010185558215610273579182015b82811115610273578251825591602001919060010190610258565b5061027f929150610283565b5090565b61029d91905b8082111561027f5760008155600101610289565b9056fea265627a7a72315820edc0d03a5a239efcec69eac7834af2eab22b87ad40e052281115e4142692121e64736f6c63430005100032",
+  "sourceMap": "86:72:0:-;64:193;86:72;;64:193;86:72;;;64:193;86:72;;;;;;;;;;;;;;;:::i;:::-;;64:193;8:9:-1;5:2;;;30:1;27;20:12;5:2;64:193:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;64:193:0;;;-1:-1:-1;64:193:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "64:193:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;64:193:0;;;;;;;;;;;;;;;;;;;;;;;;86:72;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;86:72:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;164:91;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;164:91:0;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;164:91:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;164:91:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;164:91:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;164:91:0;;-1:-1:-1;164:91:0;;-1:-1:-1;;;;;164:91:0:i;:::-;;86:72;;;;;;;;;;;;;;;-1:-1:-1;;86:72:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;164:91::-;226:22;;;;:9;;:22;;;;;:::i;:::-;;164:91;:::o;64:193::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;64:193:0;;;-1:-1:-1;64:193:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity 0.5.16;\n\ncontract Sticker{\n    string public imagePath=\"QmSEn6LZYy4ifSRfYSXoC2yJJXZNoe8zf1hNqtTRkUoS2u\";\n    function setSticker(string memory _imagePath) public{\n        imagePath = _imagePath;\n    }\n}\n",
+  "sourcePath": "/Users/vaibhavchopra/code/celo-india-fellowship/cif-week-1/ipfs-dapp/src/contracts/Sticker.sol",
+  "ast": {
+    "absolutePath": "/Users/vaibhavchopra/code/celo-india-fellowship/cif-week-1/ipfs-dapp/src/contracts/Sticker.sol",
+    "exportedSymbols": {
+      "Sticker": [
+        15
+      ]
+    },
+    "id": 16,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 15,
+        "linearizedBaseContracts": [
+          15
+        ],
+        "name": "Sticker",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "imagePath",
+            "nodeType": "VariableDeclaration",
+            "scope": 15,
+            "src": "86:72:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "86:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "516d53456e364c5a59793469665352665953586f4332794a4a585a4e6f65387a6631684e717454526b556f533275",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "110:48:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_605ae69602f733288f25611d1cf1542626d65d5ccccf1b57ad023b96b656f306",
+                "typeString": "literal_string \"QmSEn6LZYy4ifSRfYSXoC2yJJXZNoe8zf1hNqtTRkUoS2u\""
+              },
+              "value": "QmSEn6LZYy4ifSRfYSXoC2yJJXZNoe8zf1hNqtTRkUoS2u"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 13,
+              "nodeType": "Block",
+              "src": "216:39:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "imagePath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "226:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 10,
+                      "name": "_imagePath",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "238:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "226:22:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 12,
+                  "nodeType": "ExpressionStatement",
+                  "src": "226:22:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 14,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setSticker",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "_imagePath",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "184:24:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:26:0"
+            },
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "216:0:0"
+            },
+            "scope": 15,
+            "src": "164:91:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 16,
+        "src": "64:193:0"
+      }
+    ],
+    "src": "39:219:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/vaibhavchopra/code/celo-india-fellowship/cif-week-1/ipfs-dapp/src/contracts/Sticker.sol",
+      "exportedSymbols": {
+        "Sticker": [
+          15
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "39:23:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            15
+          ],
+          "name": "Sticker",
+          "scope": 16
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "imagePath",
+              "scope": 15,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "86:6:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "516d53456e364c5a59793469665352665953586f4332794a4a585a4e6f65387a6631684e717454526b556f533275",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"QmSEn6LZYy4ifSRfYSXoC2yJJXZNoe8zf1hNqtTRkUoS2u\"",
+                  "value": "QmSEn6LZYy4ifSRfYSXoC2yJJXZNoe8zf1hNqtTRkUoS2u"
+                },
+                "id": 3,
+                "name": "Literal",
+                "src": "110:48:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "86:72:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setSticker",
+              "scope": 15,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_imagePath",
+                      "scope": 14,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 5,
+                        "name": "ElementaryTypeName",
+                        "src": "184:6:0"
+                      }
+                    ],
+                    "id": 6,
+                    "name": "VariableDeclaration",
+                    "src": "184:24:0"
+                  }
+                ],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "183:26:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 8,
+                "name": "ParameterList",
+                "src": "216:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4,
+                              "type": "string storage ref",
+                              "value": "imagePath"
+                            },
+                            "id": 9,
+                            "name": "Identifier",
+                            "src": "226:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 6,
+                              "type": "string memory",
+                              "value": "_imagePath"
+                            },
+                            "id": 10,
+                            "name": "Identifier",
+                            "src": "238:10:0"
+                          }
+                        ],
+                        "id": 11,
+                        "name": "Assignment",
+                        "src": "226:22:0"
+                      }
+                    ],
+                    "id": 12,
+                    "name": "ExpressionStatement",
+                    "src": "226:22:0"
+                  }
+                ],
+                "id": 13,
+                "name": "Block",
+                "src": "216:39:0"
+              }
+            ],
+            "id": 14,
+            "name": "FunctionDefinition",
+            "src": "164:91:0"
+          }
+        ],
+        "id": 15,
+        "name": "ContractDefinition",
+        "src": "64:193:0"
+      }
+    ],
+    "id": 16,
+    "name": "SourceUnit",
+    "src": "39:219:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xF4573D0dAf8B8D78637D81C8eE90eA67C1416875",
+      "transactionHash": "0xb52f6580117eadf229d06fdca8fe6ef13b92c1d47910ee48d36ffd3942c767e6"
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-17T12:49:04.405Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
